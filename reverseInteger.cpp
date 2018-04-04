@@ -23,3 +23,24 @@ public:
         return result;
     }
 };
+class Solution1 {
+public:
+    /**
+     * @param number: A 3-digit number.
+     * @return: Reversed number.
+     */
+    int reverseInteger(int number) {
+        return (number%10)* 100 + ((number /10) %10)*10 + number/100;
+    }
+}
+class Solution {
+public:
+    /**
+     * @param character: a character
+     * @return: a character
+     */
+    char lowercaseToUppercase(char character) {
+        // write your code here
+        return character - 32;
+    }
+};
